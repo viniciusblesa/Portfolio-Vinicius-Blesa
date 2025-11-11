@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+/* Corpo da Página "Definindo cor de fundo" */
+body{
+    background-color: rgba(0, 0, 0, 0.842);
+}
+/* Navegação da Página "Definindo posição e perfumarias" */
+header{
+    border-bottom: 2px solid white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 80px;
+    background-color: black;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    box-shadow: 0 0 20px white;
+}
+header a{
+    text-decoration: none;
+}
+header nav ul li{
+    display: inline-block;
+    margin-top: 5px;
+    margin-right: 20px;
+}
+header nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 500;
+}
+/* Navegação da Página "Mudanças do movimento do cursor" */
+header h2, span{
+    text-shadow: 0 0 10px #00ffee;
+}
+header nav ul li a:hover{
+    color: #00ffee;
+    border-bottom: 2px solid #00ffee;
+}
+header nav ul li a:active{
+    color: white;
+    border-bottom: none;
+}
+/* Conteudo da Página */
+/* Definindo Cor e Tamanho dos Cabesalhos e paragrafos */
+h1, h2, h3{
+    color: #00ffee;
+
+}
+h1{
+    font-size: 45px;
+    font-weight: 800;
+}
+h2{
+    font-size: 35px;
+    font-weight: 600;
+}
+h3{
+    font-size: 25px;
+    font-weight: 400;
+}
+p{
+    text-align: justify;
+    margin-top: 10px;
+}
+p, form{
+    color: white;
+    font-size: 20px;
+}
+/* Definindo Flexibilidade e Alinhamento das Seções */
+section{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    align-items: center;
+    border-bottom: solid 50px rgb(217 217 217);
+    border-radius: 0 0 100px 100px;
+}
+/* Definindo Alinhamento e Perfumarias na Aprecentação */
+.aprecentacao{
+    width: 50%;
+    margin-right: 200px;
+}
+.aprecentacao h2{
+    margin-bottom: 20px;
+}
+.aprecentacao p{
+    margin-top: 20px;
+}
+.home img{
+    width: 25%;
+    border-radius: 50px;
+}
+.home img:hover{
+    box-shadow: 0 0 50px white;
+}
+/* Definindo Alinhamento, Tamnaho e Perfumarias no Sobre Mim */
+.texto-sobre{
+    width: 60%;
+}
+.texto-sobre h2{
+    margin-left: 80px;
+    margin-bottom: 20px;
+}
+.texto-sobre p{
+    font-size: 25px;
+    margin-left: 80px;
+}
+.sobre img{
+    width: 30%;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 30px;
+}
+.sobre img:hover{
+    box-shadow: 0 0 50px white;
+}
+/* Botão Voltar ao Topo da Página*/
+#btnTopo {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #00ffee;
+    border: solid 2px white;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+#btnTopo img{
+    height: 40px;
+}
+#btnTopo.mostrar {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+#btnTopo {
+    transform: translateY(30px);
+}
+
+#btnTopo.mostrar {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+#btnTopo:active{
+    background-color: #abfff9;
+    border: solid 2px black;
+}
+/* Definindo Alinhamento e Perfumarias nas Seções de Serviços, Portfólio e Contato */
+.servicos,
+.portfolio,
+.contato{
+    justify-content: space-around;
+    align-items: stretch;
+}
+.servicos h2,
+.portfolio h2,
+.contato h2{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 100px;
+}
+/* Definindo cada Box e Suas Perfumarias */
+.styleBox{
+    border: 2px solid #00ffee;
+    padding: 50px;
+    text-align: center;
+    flex-basis: 250px;
+    border-radius: 10px;
+    margin-top: 50px;
+    background-color: rgb(217 217 217);
+}
+.styleBox h3{
+    color: black;
+}
+.boxBootstrap img{
+    height: 70px;
+}
+.boxGithub img{
+    height: 70px;
+}
+.boxCanva img{
+    height: 70px;
+}
+ion-icon{
+    color: #00c3ff;
+    font-size: 80px;
+}
+.html:hover{
+    color: orange;
+}
+.css:hover{
+    color: rgba(0, 162, 255, 0.945);
+}
+.js:hover{
+    color: yellow;
+}
+/* Definindo Cada Box Com Suas Cores de Sombriado Quando Passar o Cursor */
+.boxHTML5:hover{
+    box-shadow: 0 0 50px orange;
+}
+.boxCSS:hover{
+    box-shadow: 0 0 50px rgba(0, 162, 255, 0.945);
+}
+.boxJavascript:hover{
+    box-shadow: 0 0 50px yellow;
+}
+.boxBootstrap:hover{
+    box-shadow: 0 0 50px purple;
+}
+.boxGithub:hover{
+    box-shadow: 0 0 50px black;
+}
+.boxCanva:hover{
+    box-shadow: 0 0 50px rgba(0, 162, 255, 0.945);
+}
+/* Definindo posição tamanho de cada caixa de projeto e suas perfumarias */
+.projeto{
+    flex-basis: 350px;
+    padding: 25px;
+    border: 2px solid #00c3ff;
+    border-radius: 10px;
+    position: relative;
+}
+.projeto p,
+.projeto a{
+    text-shadow: none;
+}
+.projeto img{
+    width: 100%;
+    margin: 20px auto;
+    border-radius: 20px;
+}
+.projeto a{
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: inline-block;
+}
+.projeto:hover{
+    box-shadow: 0 0 50px #00ffee;
+    text-shadow: 0 0 10px #00c3ff;
+}
+.projeto a:hover{
+    color: #00ffee;
+    border-bottom: 2px solid #00ffee;
+}
+/* Definindo meu formulario com suas propriedades e suas perfumarias */
+.contato{
+    align-items: center;
+    border: none;
+}
+.foto{
+    background-image: url("img/imgContato.png");
+    border-radius: 50%;
+    background-size: cover;
+}
+.gradiente{
+    width: 100%;
+    height: 400px;
+}
+.foto,
+form{
+    width: 40%;
+}
+form{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+form div{
+    margin-bottom: 15px;
+}
+input,
+label,
+textarea{
+    width: 100%;
+    font-size: 20px;
+    border-radius: 8px;
+    padding: 5px;
+}
+input:focus:focus,
+textarea:focus{
+    outline: 2px solid #00c3ff;
+}
+button{
+    color: white;
+    background-color: #00c3ff;
+    padding: 10px 60px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 25;
+    font-weight: bold;
+}
+button:hover{
+    background-color: #00ffee;
+}
+button:active{
+    background-color: #00c3ff;
+}
+/* Definindo alinhamento e tamanho das propriedades e suas perfumarias do footer com minhas redes sociais */
+footer{
+    display: inline-block;
+    border-top: 3px solid white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    background-color: black;
+    box-shadow: 0 0 20px white;
+}
+footer h3{
+    margin-top: 20px;
+}
+footer ul li{
+    display: inline-block;
+    margin: 20px 40px;
+}
+footer ul li a{
+    text-decoration: none;
+}
+footer ul li a ion-icon{
+    font-size: 40px;
+}
+footer ul li .logo-facebook ion-icon:hover{
+    border-radius: 5px;
+    color: rgb(0, 153, 255);
+    box-shadow: 0 0 50px rgb(0, 153, 255);
+}
+footer ul li .logo-instagram ion-icon:hover{
+    border-radius: 10px;
+    color: orange;
+    box-shadow: 0 0 50px orange;
+}
+footer ul li .logo-linkedin ion-icon:hover{
+    border-radius: 5px;
+    color: rgb(0, 225, 255);
+    box-shadow: 0 0 50px rgb(0, 225, 255);
+}
+footer ul li .logo-facebook ion-icon:active{
+    color: #67dcff;
+    box-shadow: none;
+}
+footer ul li .logo-instagram ion-icon:active{
+    color: #67dcff;
+    box-shadow: none;
+}
+footer ul li .logo-linkedin ion-icon:active{
+    color: #67dcff;
+    box-shadow: none;
+}
+/* Defindo propriedades para deixar o site responsivo */
+@media only screen and (max-width:1075px){
+    header{
+        display: block;
+        text-align: center;
+    }
+    section{
+        padding-top: 150px;
+    }
+    .home,
+    .sobre,
+    .contato{
+        flex-direction: column;
+    }
+    .aprecentacao,
+    .texto-sobre,
+    .foto,
+    form{
+        width: 100%;
+    }
+    .home img{
+        margin-right: 200px;
+    }
+    .sobre img{
+        order: 1;
+        margin-top: 40px;
+    }
+    .servicos,
+    .portfolio{
+        gap: 20px;
+        row-gap: 30px;
+    }
+}
+@media only screen and (max-width:685px){
+    header{
+        position: relative;
+    }
+    header nav{
+        margin-top: 20px;
+    }
+    header nav ul li{
+        display: block;
+    }
+    section{
+        padding-top: 20px;
+        margin: 0 15px;
+    }
+    .servicos h2,
+    .portfolio h2,
+    .contato h2{
+        margin: 30px auto;
+    }
+}
