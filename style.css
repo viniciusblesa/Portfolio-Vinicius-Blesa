@@ -89,7 +89,7 @@ section{
     flex-wrap: wrap;
     padding: 50px;
     align-items: center;
-    border-bottom: solid 50px rgb(217 217 217);
+    border-bottom: solid 40px rgb(217 217 217);
     border-radius: 0 0 100px 100px;
 }
 /* Definindo Alinhamento e Perfumarias na Aprecentação */
@@ -277,26 +277,16 @@ ion-icon{
     align-items: center;
     border: none;
 }
-.foto {
-    width: 280px;
-    background-image: url("img/imgContato.png");
-    background-size: cover;
-    background-position: center;
+.contato img {
+    width: 450px;   /* define a largura */
+    height: auto;   /* mantém a proporção */
     border: solid 5px rgb(217 217 217);
-    border-radius: 80px 80px 80px 5px;
-    margin: 0 auto 40px auto;
-    flex-shrink: 0; /* impede deformação */
+    border-radius: 80px 80px 80px 0; /* opcional, cantos arredondados */
+    display: block;
+    margin: 0 auto; /* centraliza a imagem */
 }
-.foto:hover{
+.contato img:hover{
     box-shadow: 5px 5px 5px 5px #00ffee;
-}
-.gradiente {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-}
-.gradiente:hover{
-    box-shadow: rgb(217 217 217);
 }
 form{
     color: white;
@@ -400,11 +390,10 @@ footer ul li .logo-linkedin ion-icon:active{
     }
     .aprecentacao,
     .texto-sobre,
-    .foto,
     form{
         width: 100%;
     }
-    .foto {
+    .contato img {
         width: 350px;
     }
     .home img{
@@ -461,9 +450,9 @@ footer ul li .logo-linkedin ion-icon:active{
         margin: -100px 0 0 0;
     }
     /* Formulário */
-    .foto {
-        width: 250px;
-        
+    .contato img {
+        width: 350px;
+        margin: 40px 0 40px 0;
     }
 }
 /* Menu fechado no mobile */
@@ -531,14 +520,14 @@ footer ul li .logo-linkedin ion-icon:active{
     }
 }
 @media only screen and (max-width:500px){
-    .foto {
+    .contato img {
             width: 320px;
         }
 }
 @media only screen and (max-width:428px){
     /* Sessões */
     section{
-        border-bottom: solid 20px rgb(217 217 217);
+        border-bottom: solid 10px rgb(217 217 217);
         border-radius: 0 0 50px 50px;
         margin: 0;
     }
@@ -612,12 +601,23 @@ footer ul li .logo-linkedin ion-icon:active{
     .contato{
         padding: 80px 20px 80px 20px;
     }
-    .foto{
+    .contato img{
         width: 280PX;
         margin: 30px 0 30px 0;
     }
     .gradiente{
         width: 280px;
         height: 280px;
+    }
+}
+@media only screen and (max-width:390px){
+    .aprecentacao h1{
+        text-align: left;
+        font-size: 30px;
+        word-spacing: -10px; /* ajuste conforme necessário */
+    }
+    .home img{
+        margin: 30px 0 0 0;
+        width: 250px;
     }
 }
