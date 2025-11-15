@@ -42,11 +42,20 @@ header h2, span{
 }
 header nav ul li a:hover{
     color: #00ffee;
-    border-bottom: 2px solid #00ffee;
 }
 header nav ul li a:active{
     color: white;
     border-bottom: none;
+}
+/* Botão do menu hamburguer */
+.menu-btn {
+    display: none;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+.menu-btn ion-icon {
+    color: white;
 }
 /* Conteudo da Página */
 /* Definindo Cor e Tamanho dos Cabesalhos e paragrafos */
@@ -400,6 +409,97 @@ footer ul li .logo-linkedin ion-icon:active{
         row-gap: 30px;
     }
 }
+@media only screen and (max-width:884px){
+    /* Aprecentação */
+    .aprecentacao{
+        text-align: center;
+        margin: -100px 0 30px 0;
+    }
+    .home img{
+        width: 280px;
+        border-radius: 50px;
+        margin: 0;
+    }
+    .home img:hover{
+        box-shadow: 0 0 50px white;
+    }
+    /* Sobre */
+    .sobre{
+        text-align: center;
+        margin: 0;
+    }
+    .texto-sobre h2{
+        margin: -100px 0 30px 0;
+    }
+    .texto-sobre p{
+        margin: 0;
+    }
+    .sobre img{
+        width: 280px;
+        margin: 30px 0 0 0;
+        background-color: white;
+        border-radius: 30px;
+    }
+    .sobre img:hover{
+        box-shadow: 0 0 50px white;
+    }
+    /* Servicos */
+    .servicos h2,
+    .portfolio h2,
+    .contato h2{
+        margin: -100px 0 0 0;
+    }
+    /* Formulário */
+    .foto{
+    width: 500px;
+    border-radius: 1;
+    margin: 30px 0 30px 0;
+    }
+}
+/* Menu fechado no mobile */
+@media only screen and (max-width: 785px) {
+    .menu-btn {
+        display: block;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+    header nav {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background-color: black;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.3s ease;
+        box-shadow: 0 10px 25px rgba(0, 255, 238, 0.3);
+    }
+    header nav ul {
+        display: block;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    header nav ul li {
+        margin: 20px 0;
+    }
+    header nav ul li a {
+        font-size: 25px;
+        border-bottom: solid 2px white;
+    }
+    header nav ul li a:hover {
+        border-bottom: solid 2px #00ffee;
+    }
+    /* menu aberto */
+    nav.abrir {
+        max-height: 350px;
+        padding: 20px 0;
+    }
+}
 @media only screen and (max-width:685px){
     header{
         position: relative;
@@ -418,5 +518,88 @@ footer ul li .logo-linkedin ion-icon:active{
     .portfolio h2,
     .contato h2{
         margin: 30px auto;
+    }
+}
+@media only screen and (max-width:428px){
+    /* Sessões */
+    section{
+        border-bottom: solid 20px rgb(217 217 217);
+        border-radius: 0 0 50px 50px;
+        margin: 0;
+    }
+    /* Aprecentação */
+    .home{
+        padding: 80px 20px 80px 20px;
+    }
+    .aprecentacao{
+        margin: 0;
+    }
+    .aprecentacao h1{
+        text-align: left;
+        font-size: 35px;
+        word-spacing: -10px; /* ajuste conforme necessário */
+    }
+    .home img{
+        margin: 30px 0 0 0;
+        width: 300px;
+    }
+    /* Botão Que ao Topo */
+    #btnTopo {
+    bottom: 70px;
+}
+    /* Sobre */
+    .sobre{
+        margin: 0;
+        padding: 80px 20px 80px 20px;
+    }
+    .texto-sobre h2{
+        margin: 0;
+    }
+    .texto-sobre p{
+        margin: 30px 0 0 0;
+        font-size: 28px;
+        hyphens: auto;
+    }
+    .sobre img{
+        width: 300px;
+    }
+    /* Servicos */
+    .servicos h2,
+    .portfolio h2,
+    .contato h2{
+        margin: 0;
+        font-size: 35px;
+    }
+    .servicos{
+        padding: 80px 20px 80px 20px;
+    }
+    .servicos .styleBox{
+        margin: 0;
+    }
+    .portfolio{
+        padding: 80px 0 80px 0;
+        margin: 0;
+    }
+    .projeto{
+        border: 5px solid #00c3ff
+    }
+    .projeto h3{
+        font-size: 30px;
+    }
+    .projeto p{
+        font-size: 25px;
+        word-spacing: -10px; /* ajuste conforme necessário */
+    }
+    .projeto a{
+        font-size: 20px;
+    }
+    /* Formulário */
+    .contato{
+        padding: 80px 20px 80px 20px;
+    }
+    .foto{
+        width: 500px;
+        border-radius: 1;
+        margin: 30px 0 30px 0;
     }
 }

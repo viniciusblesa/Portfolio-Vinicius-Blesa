@@ -1,3 +1,19 @@
+// MENU HAMBÚRGUER
+const menuBtn = document.getElementById('menuBtn');
+const navbar = document.getElementById('navbar');
+
+menuBtn.addEventListener('click', () => {
+    navbar.classList.toggle('abrir');
+
+    // troca ícone menu <-> X
+    const icone = menuBtn.querySelector("ion-icon");
+    if (navbar.classList.contains('abrir')) {
+        icone.setAttribute("name", "close-outline");
+    } else {
+        icone.setAttribute("name", "menu-outline");
+    }
+});
+
 // Seleciona o botão e a seção "sobre"
 const btnTopo = document.getElementById('btnTopo');
 const sectionSobre = document.getElementById('sobre');
