@@ -108,7 +108,7 @@ section{
     border-radius: 50px;
 }
 .home img:hover{
-    box-shadow: 0 0 50px white;
+    box-shadow: 5px 5px 5px 5px white;
 }
 /* Definindo Alinhamento, Tamnaho e Perfumarias no Sobre Mim */
 .texto-sobre{
@@ -129,7 +129,7 @@ section{
     border-radius: 30px;
 }
 .sobre img:hover{
-    box-shadow: 0 0 50px white;
+    box-shadow: -5px 5px 5px 5px white;
 }
 /* Botão Voltar ao Topo da Página*/
 #btnTopo {
@@ -187,13 +187,13 @@ section{
 }
 /* Definindo cada Box e Suas Perfumarias */
 .styleBox{
-    border: 2px solid #00ffee;
+    border: 4px solid #00ffee;
     padding: 50px;
     text-align: center;
     flex-basis: 250px;
     border-radius: 10px;
     margin-top: 50px;
-    background-color: rgb(217 217 217);
+    background-color: white;
 }
 .styleBox h3{
     color: black;
@@ -211,39 +211,39 @@ ion-icon{
     color: #00c3ff;
     font-size: 80px;
 }
-.html:hover{
+.html{
     color: orange;
 }
-.css:hover{
+.css{
     color: rgba(0, 162, 255, 0.945);
 }
-.js:hover{
+.js{
     color: yellow;
 }
 /* Definindo Cada Box Com Suas Cores de Sombriado Quando Passar o Cursor */
 .boxHTML5:hover{
-    box-shadow: 0 0 50px orange;
+    box-shadow: 1px 1px 5px 8px orange;
 }
 .boxCSS:hover{
-    box-shadow: 0 0 50px rgba(0, 162, 255, 0.945);
+    box-shadow: 1px 1px 5px 8px rgba(0, 162, 255, 0.945);
 }
 .boxJavascript:hover{
-    box-shadow: 0 0 50px yellow;
+    box-shadow: 1px 1px 5px 8px yellow;
 }
 .boxBootstrap:hover{
-    box-shadow: 0 0 50px purple;
+    box-shadow: 1px 1px 5px 8px purple;
 }
 .boxGithub:hover{
-    box-shadow: 0 0 50px black;
+    box-shadow: 1px 1px 5px 8px black;
 }
 .boxCanva:hover{
-    box-shadow: 0 0 50px rgba(0, 162, 255, 0.945);
+    box-shadow: 1px 1px 5px 8px rgba(0, 162, 255, 0.945);
 }
 /* Definindo posição tamanho de cada caixa de projeto e suas perfumarias */
 .projeto{
     flex-basis: 350px;
     padding: 25px;
-    border: 2px solid #00c3ff;
+    border: 4px solid #00c3ff;
     border-radius: 10px;
     position: relative;
 }
@@ -265,7 +265,7 @@ ion-icon{
     display: inline-block;
 }
 .projeto:hover{
-    box-shadow: 0 0 50px #00ffee;
+    box-shadow: 1px 1px 5px 8px #00ffee;
     text-shadow: 0 0 10px #00c3ff;
 }
 .projeto a:hover{
@@ -346,18 +346,19 @@ footer ul li a{
 }
 footer ul li a ion-icon{
     font-size: 40px;
+    background-color: white;
 }
-footer ul li .logo-facebook ion-icon:hover{
+footer ul li .logo-facebook ion-icon{
     border-radius: 5px;
     color: rgb(0, 153, 255);
     box-shadow: 0 0 50px rgb(0, 153, 255);
 }
-footer ul li .logo-instagram ion-icon:hover{
-    border-radius: 10px;
+footer ul li .logo-instagram ion-icon{
+    border-radius: 5px;
     color: orange;
     box-shadow: 0 0 50px orange;
 }
-footer ul li .logo-linkedin ion-icon:hover{
+footer ul li .logo-linkedin ion-icon{
     border-radius: 5px;
     color: rgb(0, 225, 255);
     box-shadow: 0 0 50px rgb(0, 225, 255);
@@ -550,7 +551,7 @@ footer ul li .logo-linkedin ion-icon:active{
     /* Botão Que ao Topo */
     #btnTopo {
     bottom: 70px;
-}
+    }
     /* Sobre */
     .sobre{
         margin: 0;
