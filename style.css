@@ -11,15 +11,15 @@ body{
 }
 /* Navegação da Página "Definindo posição e perfumarias" */
 header{
-    border-bottom: 2px solid white;
     display: flex;
     justify-content: space-between;
     padding: 15px 80px;
-    background-color: black;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 999;
+    border-bottom: 2px solid white;
+    background-color: black;
     box-shadow: 0 0 20px white;
 }
 header a{
@@ -27,14 +27,13 @@ header a{
 }
 header nav ul li{
     display: inline-block;
-    margin-top: 5px;
-    margin-right: 20px;
+    margin: 5px 20px 0 0;
 }
 header nav ul li a{
-    color: white;
     text-decoration: none;
     font-size: 25px;
     font-weight: 500;
+    color: white;
 }
 /* Navegação da Página "Mudanças do movimento do cursor" */
 header h2, span{
@@ -44,24 +43,23 @@ header nav ul li a:hover{
     color: #00ffee;
 }
 header nav ul li a:active{
-    color: white;
     border-bottom: none;
+    color: white;
 }
 /* Botão do menu hamburguer */
-.menu-btn {
+.menu-btn{
     display: none;
+    cursor: pointer;
     font-size: 40px;
     color: white;
-    cursor: pointer;
 }
-.menu-btn ion-icon {
+.menu-btn ion-icon{
     color: white;
 }
 /* Conteudo da Página */
 /* Definindo Cor e Tamanho dos Cabesalhos e paragrafos */
 h1, h2, h3{
     color: #00ffee;
-
 }
 h1{
     font-size: 45px;
@@ -80,22 +78,22 @@ p{
     margin-top: 10px;
 }
 p, form{
-    color: white;
     font-size: 20px;
+    color: white;
 }
 /* Definindo Flexibilidade e Alinhamento das Seções */
 section{
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
     padding: 50px;
-    align-items: center;
     border-bottom: solid 40px white;
     border-radius: 0;
 }
 /* Definindo Alinhamento e Perfumarias na Aprecentação */
 .aprecentacao{
-    width: 50%;
     margin-right: 200px;
+    width: 50%;
 }
 .aprecentacao h2{
     margin-bottom: 20px;
@@ -111,65 +109,64 @@ section{
     box-shadow: 5px 5px 5px 5px white;
 }
 /* Definindo Alinhamento, Tamnaho e Perfumarias no Sobre Mim */
-.texto-sobre{
+.textoSobre{
     width: 60%;
 }
-.texto-sobre h2{
-    margin-left: 80px;
-    margin-bottom: 20px;
+.textoSobre h2{
+    margin: 0 0 20px 80px;
 }
-.texto-sobre p{
-    font-size: 25px;
+.textoSobre p{
     margin-left: 80px;
+    font-size: 25px;
 }
 .sobre img{
-    width: 30%;
     margin: 0 auto;
-    background-color: white;
+    width: 30%;
     border-radius: 30px;
+    background-color: white;
 }
 .sobre img:hover{
     box-shadow: -5px 5px 5px 5px white;
 }
 /* Botão Voltar ao Topo da Página*/
-#btnTopo {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    background-color: #00ffee;
-    border: solid 2px white;
-    border-radius: 100%;
-    width: 50px;
-    height: 50px;
+#btnTopo{
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    position: fixed;
     cursor: pointer;
+    right: 30px;
+    bottom: 30px;
+    height: 50px;
+    width: 50px;
+    border: solid 2px white;
+    border-radius: 100%;    
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s ease;
     z-index: 1000;
+    background-color: #00ffee;
 }
 #btnTopo img{
     height: 40px;
 }
-#btnTopo.mostrar {
+#btnTopo.mostrar{
     opacity: 1;
     visibility: visible;
     transform: scale(1);
 }
-#btnTopo {
+#btnTopo{
     transform: translateY(30px);
 }
 
-#btnTopo.mostrar {
+#btnTopo.mostrar{
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
 }
 #btnTopo:active{
-    background-color: #abfff9;
     border: solid 2px black;
+    background-color: #abfff9;
 }
 /* Definindo Alinhamento e Perfumarias nas Seções de Serviços, Portfólio e Contato */
 .servicos,
@@ -181,18 +178,18 @@ section{
 .servicos h2,
 .portfolio h2,
 .contato h2{
-    width: 100%;
     text-align: center;
     margin-bottom: 100px;
+    width: 100%;
 }
 /* Definindo cada Box e Suas Perfumarias */
 .styleBox{
-    border: 4px solid #00ffee;
-    padding: 50px;
     text-align: center;
+    margin-top: 50px;
+    padding: 50px;
+    border: 4px solid #00ffee;    
     flex-basis: 250px;
     border-radius: 10px;
-    margin-top: 50px;
     background-color: white;
 }
 .styleBox h3{
@@ -208,8 +205,8 @@ section{
     height: 70px;
 }
 ion-icon{
-    color: #00c3ff;
     font-size: 80px;
+    color: #00c3ff;
 }
 .html{
     color: orange;
@@ -241,57 +238,57 @@ ion-icon{
 }
 /* Definindo posição tamanho de cada caixa de projeto e suas perfumarias */
 .projeto{
-    flex-basis: 350px;
+    position: relative;
     padding: 25px;
     border: 4px solid white;
     border-radius: 10px;
-    position: relative;
+    flex-basis: 350px;
 }
 .projeto p,
 .projeto a{
     text-shadow: none;
 }
 .projeto img{
-    width: 100%;
     margin: 20px auto;
+    width: 100%;
     border-radius: 20px;
 }
 .projeto a{
-    color: white;
-    text-decoration: none;
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
     display: inline-block;
+    right: 20px;
+    bottom: 20px;
+    position: absolute;
+    text-decoration: none;
+    color: white;
 }
 .projeto:hover{
     box-shadow: 1px 1px 5px 8px #00ffee;
     text-shadow: 0 0 10px #00c3ff;
 }
 .projeto a:hover{
-    color: #00ffee;
     border-bottom: 2px solid #00ffee;
+    color: #00ffee;
 }
 /* Definindo meu formulario com suas propriedades e suas perfumarias */
 .contato{
     align-items: center;
     border: none;
 }
-.contato img {
-    width: 450px;   /* define a largura */
-    height: auto;   /* mantém a proporção */
-    border: solid 5px rgb(217 217 217);
-    border-radius: 80px 80px 80px 0; /* opcional, cantos arredondados */
+.contato img{
     display: block;
-    margin: 0 auto; /* centraliza a imagem */
+    margin: 0 auto;
+    height: auto;
+    width: 450px;
+    border: solid 5px white;
+    border-radius: 80px 80px 80px 0;
 }
 .contato img:hover{
     box-shadow: 5px 5px 5px 5px #00ffee;
 }
 form{
-    color: white;
     font-size: 20px;
     font-weight: 500;
+    color: white;
 }
 form div{
     margin-bottom: 15px;
@@ -300,22 +297,22 @@ input,
 label,
 textarea{
     width: 100%;
+    padding: 5px;
     font-size: 20px;
     border-radius: 8px;
-    padding: 5px;
 }
 input:focus,
 textarea:focus{
     outline: 2px solid #00c3ff;
 }
 button{
-    color: white;
-    background-color: #00c3ff;
+    margin-top: 20px;
     padding: 10px 60px;
     border-radius: 10px;
-    margin-top: 20px;
     font-size: 25;
     font-weight: bold;
+    background-color: #00c3ff;
+    color: white;
 }
 button:hover{
     background-color: #00ffee;
@@ -326,13 +323,13 @@ button:active{
 /* Definindo alinhamento e tamanho das propriedades e suas perfumarias do footer com minhas redes sociais */
 footer{
     display: inline-block;
+    text-align: center;
+    width: 100%;
     border-top: 3px solid white;
     font-size: 18px;
     font-weight: bold;
-    text-align: center;
-    width: 100%;
-    background-color: black;
     box-shadow: 0 0 20px white;
+    background-color: black;
 }
 footer h3{
     margin-top: 20px;
@@ -348,32 +345,32 @@ footer ul li a ion-icon{
     font-size: 40px;
     background-color: white;
 }
-footer ul li .logo-facebook ion-icon{
+footer ul li .logoFacebook ion-icon{
     border-radius: 5px;
-    color: rgb(0, 153, 255);
     box-shadow: 0 0 5px 4px rgb(0, 153, 255);
+    color: rgb(0, 153, 255);
 }
-footer ul li .logo-instagram ion-icon{
+footer ul li .logoInstagram ion-icon{
     border-radius: 5px;
-    color: orange;
     box-shadow: 0 0 5px 4px orange;
+    color: orange;
 }
-footer ul li .logo-linkedin ion-icon{
+footer ul li .logoLinkedin ion-icon{
     border-radius: 5px;
-    color: rgb(0, 225, 255);
     box-shadow: 0 0 5px 4px rgb(0, 225, 255);
+    color: rgb(0, 225, 255);
 }
-footer ul li .logo-facebook ion-icon:active{
-    color: #67dcff;
+footer ul li .logoFacebook ion-icon:active{
     box-shadow: none;
+    color: #67dcff;
 }
-footer ul li .logo-instagram ion-icon:active{
-    color: #67dcff;
+footer ul li .logoInstagram ion-icon:active{
     box-shadow: none;
+    color: #67dcff;
 }
-footer ul li .logo-linkedin ion-icon:active{
-    color: #67dcff;
+footer ul li .logoLinkedin ion-icon:active{
     box-shadow: none;
+    color: #67dcff;
 }
 /* Defindo propriedades para deixar o site responsivo */
 @media only screen and (max-width:1075px){
@@ -390,19 +387,19 @@ footer ul li .logo-linkedin ion-icon:active{
         flex-direction: column;
     }
     .aprecentacao,
-    .texto-sobre,
+    .textoSobre,
     form{
         width: 100%;
     }
-    .contato img {
+    .contato img{
         width: 350px;
     }
     .home img{
         margin-right: 200px;
     }
     .sobre img{
-        order: 1;
         margin-top: 40px;
+        order: 1;
     }
     .servicos,
     .portfolio{
@@ -417,9 +414,9 @@ footer ul li .logo-linkedin ion-icon:active{
         margin: -100px 0 30px 0;
     }
     .home img{
+        margin: 0;
         width: 280px;
         border-radius: 50px;
-        margin: 0;
     }
     .home img:hover{
         box-shadow: 1px 1px 5px 8px white;
@@ -429,17 +426,17 @@ footer ul li .logo-linkedin ion-icon:active{
         text-align: center;
         margin: 0;
     }
-    .texto-sobre h2{
+    .textoSobre h2{
         margin: -100px 0 30px 0;
     }
-    .texto-sobre p{
+    .textoSobre p{
         margin: 0;
     }
     .sobre img{
-        width: 280px;
         margin: 30px 0 0 0;
-        background-color: white;
+        width: 280px;
         border-radius: 30px;
+        background-color: white;
     }
     .sobre img:hover{
         box-shadow: 1px 1px 5px 8px white;
@@ -451,51 +448,51 @@ footer ul li .logo-linkedin ion-icon:active{
         margin: -100px 0 0 0;
     }
     /* Formulário */
-    .contato img {
-        width: 350px;
+    .contato img{
         margin: 40px 0 40px 0;
+        width: 350px;
     }
 }
 /* Menu fechado no mobile */
-@media only screen and (max-width: 785px) {
-    .menu-btn {
+@media only screen and (max-width: 785px){
+    .menu-btn{
         display: block;
     }
-    header {
+    header{
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 20px;
     }
-    header nav {
+    header nav{
         position: absolute;
         top: 80px;
         right: 0;
-        background-color: black;
-        width: 100%;
         max-height: 0;
+        width: 100%;
         overflow: hidden;
         transition: 0.3s ease;
         box-shadow: 0 10px 25px rgba(0, 255, 238, 0.3);
+        background-color: black;
     }
-    header nav ul {
+    header nav ul{
         display: block;
         text-align: center;
-        padding: 0;
         margin: 0;
+        padding: 0;
     }
-    header nav ul li {
+    header nav ul li{
         margin: 20px 0;
     }
-    header nav ul li a {
+    header nav ul li a{
         font-size: 25px;
         border-bottom: solid 2px white;
     }
-    header nav ul li a:hover {
+    header nav ul li a:hover{
         border-bottom: solid 2px #00ffee;
     }
     /* menu aberto */
-    nav.abrir {
+    nav.abrir{
         max-height: 350px;
         padding: 20px 0;
     }
@@ -511,8 +508,8 @@ footer ul li .logo-linkedin ion-icon:active{
         display: block;
     }
     section{
-        padding-top: 20px;
         margin: 0 15px;
+        padding-top: 20px;
     }
     .servicos h2,
     .portfolio h2,
@@ -521,14 +518,13 @@ footer ul li .logo-linkedin ion-icon:active{
     }
 }
 @media only screen and (max-width:500px){
-    .contato img {
+    .contato img{
             width: 320px;
         }
 }
 @media only screen and (max-width:428px){
     /* Sessões */
     section{
-        
         margin: 0;
     }
     /* Aprecentação */
@@ -548,7 +544,7 @@ footer ul li .logo-linkedin ion-icon:active{
         width: 300px;
     }
     /* Botão Que ao Topo */
-    #btnTopo {
+    #btnTopo{
     bottom: 70px;
     }
     /* Sobre */
@@ -556,10 +552,10 @@ footer ul li .logo-linkedin ion-icon:active{
         margin: 0;
         padding: 80px 20px 80px 20px;
     }
-    .texto-sobre h2{
+    .textoSobre h2{
         margin: 0;
     }
-    .texto-sobre p{
+    .textoSobre p{
         margin: 30px 0 0 0;
         font-size: 28px;
         hyphens: auto;
@@ -581,8 +577,8 @@ footer ul li .logo-linkedin ion-icon:active{
         margin: 0;
     }
     .portfolio{
-        padding: 80px 0 80px 0;
         margin: 0;
+        padding: 80px 0 80px 0;
     }
     .projeto{
         border: 5px solid #00c3ff
@@ -602,12 +598,12 @@ footer ul li .logo-linkedin ion-icon:active{
         padding: 80px 20px 80px 20px;
     }
     .contato img{
-        width: 280PX;
         margin: 30px 0 30px 0;
+        width: 280PX;
     }
     .gradiente{
-        width: 280px;
         height: 280px;
+        width: 280px;
     }
 }
 @media only screen and (max-width:390px){
