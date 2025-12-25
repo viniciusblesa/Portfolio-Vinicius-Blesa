@@ -416,11 +416,6 @@ footer ul li .logoLinkedin ion-icon:active{
 }
 /* Tablet */
 @media (max-width: 890px){
-    /*  */
-    header{
-        justify-content: center;
-    }
-    /*  */
     .inicio h1{
         font-size: 40px;
     }
