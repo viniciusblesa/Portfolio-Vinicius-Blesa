@@ -63,7 +63,6 @@ header nav ul li a:active{
     align-items: center;
     flex-wrap: wrap;
     padding: 50px;
-    border-bottom: solid 40px white;
 }
 .inicio .container .containerSon{
     width: 50%;
@@ -86,6 +85,13 @@ header nav ul li a:active{
 .inicio .container img:hover{
     box-shadow: 5px 5px 5px 5px white;
 }
+/* Definindo e Estilizando a Quebra de Seção */
+.quebraSecao{
+    margin: 0 10px 0 10px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: white;
+}
 /* Definindo Alinhamento, Tamnaho e Perfumarias no Sobre Mim */
 .sobre .container{
     display: flex;
@@ -93,7 +99,6 @@ header nav ul li a:active{
     align-items: center;
     flex-wrap: wrap;
     padding: 50px;
-    border-bottom: solid 40px white;
 }
 .sobre .container .containerSon{
     width: 60%;
@@ -157,7 +162,6 @@ header nav ul li a:active{
 /* Definindo Alinhamento e Perfumarias nas Seções de Serviços. Caixa Box Com Suas Cores de Sombriado Quando Passar o Cursor */
 .servicos{
     padding: 50px;
-    border-bottom: solid 40px white;
 }
 .servicos h2{
     text-align: center;
@@ -217,7 +221,16 @@ h3{
     box-shadow: 1px 1px 5px 8px black;
 }
 .servicos .container .boxCanva:hover{
-    box-shadow: 1px 1px 5px 8px rgba(0, 162, 255, 0.945);
+    box-shadow: 1px 1px 5px 8px #04becd;
+}
+.servicos .container .boxClickUp:hover{
+    box-shadow: 1px 1px 5px 8px purple;
+}
+.servicos .container .boxExcel:hover{
+    box-shadow: 1px 1px 5px 8px green;
+}
+.servicos .container .boxWord:hover{
+    box-shadow: 1px 1px 5px 8px #103f91;
 }
 ion-icon{
     font-size: 80px;
@@ -226,7 +239,6 @@ ion-icon{
 /* projetos */
 .projetos{
     padding: 50px;
-    border-bottom: solid 40px white;
 }
 .projetos h2{
     text-align: center;
@@ -416,6 +428,11 @@ footer ul li .logoLinkedin ion-icon:active{
 }
 /* Tablet */
 @media (max-width: 890px){
+    /*  */
+    header{
+        justify-content: center;
+    }
+    /*  */
     .inicio h1{
         font-size: 40px;
     }
