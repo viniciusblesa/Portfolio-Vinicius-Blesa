@@ -23,14 +23,14 @@ header img{
     height: 80px;
     border-radius: 100%;
 }
-header a{
-    text-decoration: none;
-}
 header nav ul li{
     display: inline-block;
     margin: 5px 20px 0 0;
+    border-left: 5px solid rgba(255, 255, 255, 0.2);
+    border-right: 5px solid rgba(255, 255, 255, 0.2);
 }
 header nav ul li a{
+    margin: 0 5px 0 5px;
     text-decoration: none;
     font-size: 25px;
     font-weight: 500;
@@ -39,8 +39,12 @@ header nav ul li a{
 header h2, span{
     text-shadow: 0 0 10px #00ffee;
 }
+header nav ul li:hover{
+    border-left: 5px solid rgba(255, 255, 255, 0.61);
+    border-right: 5px solid rgba(255, 255, 255, 0.664);
+}
 header nav ul li a:hover{
-    color: #00ffee;
+    text-shadow: 0 0 2px white;
 }
 header nav ul li a:active{
     border-bottom: none;
@@ -110,7 +114,7 @@ header nav ul li a:active{
     color: #00ffee;
 }
 .sobre .container .containerSon p{
-    text-align: justify;
+    text-align: left;
     margin: 10px 0 0 0;
     font-size: 25px;
     color: white;
@@ -179,11 +183,8 @@ header nav ul li a:active{
 .servicos .container .styleBox{
     text-align: center;
     margin-top: 50px;
-    padding: 50px;
     flex-basis: 160px;
-    border: 4px solid #00ffee;  
     border-radius: 10px;
-    background-color: white;
 }
 h3{
     font-size: 25px;
@@ -191,50 +192,125 @@ h3{
     color: #00ffee;
 }
 .servicos .container .styleBox h3{
-    color: black;
+    color: white;
 }
-.servicos .container .styleBox .html{
-    color: orange;
+/* Espaço para os Boxs com icone */
+.servicos .container .styleBox .borderBoxHTML5{
+    margin: 0 0 20px 0;
+    border: 5px solid rgb(255, 139, 97);
+    border-radius: 30%;
 }
-.servicos .container .styleBox .css{
-    color: rgba(0, 162, 255, 0.945);
+.servicos .container .styleBox .boxHTML5{
+    margin: 10px;
+    padding: 50px;
+    border-radius: 30%;
+    background-color: rgb(255, 139, 97);
+    
 }
-.servicos .container .styleBox .js{
-    color: #f0db4f;
+.servicos .container .styleBox .borderBoxCSS{
+    margin: 0 0 20px 0;
+    border: 5px solid rgb(65, 65, 255);
+    border-radius: 30%;
+}
+.servicos .container .styleBox .boxCSS{
+    margin: 10px;
+    padding: 50px;
+    border-radius: 30%;
+    background-color: rgb(65, 65, 255);
+}
+.servicos .container .styleBox .borderBoxJS{
+    margin: 0 0 20px 0;
+    border: 5px solid rgb(233, 233, 56);
+    border-radius: 30%;
+}
+.servicos .container .styleBox .boxJS{
+    margin: 10px;
+    padding: 50px;
+    border-radius: 30%;
+    background-color: rgb(233, 233, 56);
+}
+.servicos .container .styleBox .borderBoxBootstrap{
+    margin: 0 0 20px 0;
+    border: 5px solid rgb(122, 27, 122);
+    border-radius: 30%;
+}
+.servicos .container .styleBox .boxBootstrap{
+    margin: 10px;
+    padding: 50px;
+    border-radius: 30%;
+    background-color: rgb(122, 27, 122);
+}
+.servicos .container .styleBox .borderBoxGithub{
+    margin: 0 0 20px 0;
+    border: 5px solid rgb(22, 22, 22);
+    border-radius: 30%;
+}
+.servicos .container .styleBox .boxGithub{
+    margin: 10px;
+    padding: 50px;
+    border-radius: 30%;
+    background-color: rgb(22, 22, 22);
+}
+.servicos .container .styleBox .borderBoxCanva{
+    margin: 0 0 20px 0;
+    border: 5px solid rgb(0, 211, 211);
+    border-radius: 30%;
+}
+.servicos .container .styleBox .boxCanva{
+    margin: 10px;
+    padding: 50px;
+    border-radius: 30%;
+    background-color: rgb(0, 211, 211);
+}
+.servicos .container .styleBox .borderBoxClickUp{
+    margin: 0 0 20px 0;
+    border: 5px solid rgb(255, 175, 25);
+    border-radius: 30%;
+}
+.servicos .container .styleBox .boxClickUp{
+    margin: 10px;
+    padding: 50px;
+    border-radius: 30%;
+    background-color: rgb(255, 175, 25);
+}
+.servicos .container .styleBox .borderBoxExcel{
+    margin: 0 0 20px 0;
+    border: 5px solid rgb(15, 124, 15);
+    border-radius: 30%;
+}
+.servicos .container .styleBox .boxExcel{
+    margin: 10px;
+    padding: 50px;
+    border-radius: 30%;
+    background-color: rgb(15, 124, 15);
+}
+/* Espaço para o :hover*/
+.borderBoxHTML5:hover, .boxHTML5:hover{
+    box-shadow: 0 0 20px 4px orangered;
+}
+.borderBoxCSS:hover, .boxCSS:hover{
+    box-shadow: 0 0 20px 4px blue;
+}
+.borderBoxJS:hover, .boxJS:hover{
+    box-shadow: 0 0 20px 4px yellow;
+}
+.borderBoxBootstrap:hover, .boxBootstrap:hover{
+    box-shadow: 0 0 20px 4px purple;
+}
+.borderBoxGithub:hover, .boxGithub:hover{
+    box-shadow: 0 0 20px 4px black;
+}
+.borderBoxCanva:hover, .boxCanva:hover{
+    box-shadow: 0 0 20px 4px cyan;
+}
+.borderBoxClickUp:hover, .boxClickUp:hover{
+    box-shadow: 0 0 20px 4px rgb(255, 175, 25);
+}
+.borderBoxExcel:hover, .boxExcel:hover{
+    box-shadow: 0 0 20px 4px green;
 }
 .servicos .container .styleBox img{
-    height: 70px;
-}
-.servicos .container .boxHTML5:hover{
-    box-shadow: 1px 1px 5px 8px orange;
-}
-.servicos .container .boxCSS:hover{
-    box-shadow: 1px 1px 5px 8px rgba(0, 162, 255, 0.945);
-}
-.servicos .container .boxJavascript:hover{
-    box-shadow: 1px 1px 5px 8px yellow;
-}
-.servicos .container .boxBootstrap:hover{
-    box-shadow: 1px 1px 5px 8px purple;
-}
-.servicos .container .boxGithub:hover{
-    box-shadow: 1px 1px 5px 8px black;
-}
-.servicos .container .boxCanva:hover{
-    box-shadow: 1px 1px 5px 8px #04becd;
-}
-.servicos .container .boxClickUp:hover{
-    box-shadow: 1px 1px 5px 8px purple;
-}
-.servicos .container .boxExcel:hover{
-    box-shadow: 1px 1px 5px 8px green;
-}
-.servicos .container .boxWord:hover{
-    box-shadow: 1px 1px 5px 8px #103f91;
-}
-ion-icon{
-    font-size: 80px;
-    color: #00c3ff;
+    height: auto;
 }
 /* projetos */
 .projetos{
@@ -261,7 +337,7 @@ ion-icon{
     
 }
 .projetos .container .containerSon p{
-    text-align: justify;
+    text-align: left;
     margin-top: 10px;
     font-size: 20px;
     color: white;
@@ -281,7 +357,7 @@ ion-icon{
     color: white;
 }
 .projetos .container .containerSon:hover{
-    box-shadow: 1px 1px 5px 8px #00ffee;
+    box-shadow: 0 0 10px 5px white;
 }
 .projetos .container .containerSon a:hover{
     border: solid 1px orange;
@@ -360,11 +436,12 @@ ion-icon{
     border-radius: 10px;
     font-size: 25;
     font-weight: bold;
+    cursor: pointer;
     background-color: #00c3ff;
     color: white;
 }
 .contato .container button:hover{
-    background-color: #00ffee;
+    background-color: #00b8f0;
 }
 .contato .container button:active{
     background-color: #00c3ff;
@@ -501,9 +578,6 @@ footer ul li .logoLinkedin ion-icon:active{
         display: block;
         margin: 20px 0;
     }
-    header nav ul li a{
-        text-decoration: underline;
-    }
     /*  */
     .inicio .container{
         display: flex;
@@ -512,7 +586,6 @@ footer ul li .logoLinkedin ion-icon:active{
         flex-direction: column;
         text-align: justify;
         padding: 15px 10px;
-        border-bottom: solid 20px white;
     }
     .inicio .container .containerSon{
         display: flex;
@@ -541,7 +614,6 @@ footer ul li .logoLinkedin ion-icon:active{
         align-items: center;
         flex-direction: column;
         padding: 15px 10px;
-        border-bottom: solid 20px white;
     }
     .sobre .container .containerSon{
         display: flex;
@@ -569,7 +641,6 @@ footer ul li .logoLinkedin ion-icon:active{
     /*  */
     .servicos{
         padding: 40px 10px 40px 10px;
-        border-bottom: solid 20px white;
     }
     .servicos h2{
         margin: 0 0 0 0;
@@ -577,7 +648,6 @@ footer ul li .logoLinkedin ion-icon:active{
     /*  */
     .projetos{
         padding: 40px 10px 40px 10px;
-        border-bottom: solid 20px white;
     }
     .projetos h2{
         margin: 0 0 0 0;
