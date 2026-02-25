@@ -240,6 +240,17 @@ h3{
     border-radius: 30%;
     background-color: rgb(122, 27, 122);
 }
+.servicos .container .styleBox .borderBoxGit{
+    margin: 0 0 20px 0;
+    border: 5px solid rgb(212, 64, 64);
+    border-radius: 30%;
+}
+.servicos .container .styleBox .boxGit{
+    margin: 10px;
+    padding: 50px;
+    border-radius: 30%;
+    background-color: rgb(212, 64, 64);
+}
 .servicos .container .styleBox .borderBoxGithub{
     margin: 0 0 20px 0;
     border: 5px solid rgb(22, 22, 22);
@@ -296,6 +307,9 @@ h3{
 }
 .borderBoxBootstrap:hover, .boxBootstrap:hover{
     box-shadow: 0 0 20px 4px purple;
+}
+.borderBoxGit:hover, .boxGit:hover{
+    box-shadow: 0 0 20px 4px red;
 }
 .borderBoxGithub:hover, .boxGithub:hover{
     box-shadow: 0 0 20px 4px black;
