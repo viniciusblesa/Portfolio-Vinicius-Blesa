@@ -1,11 +1,3 @@
-// MENU HAMBÚRGUER
-const menuBtn = document.getElementById("menuBtn");
-const navbar = document.getElementById("navbar");
-
-menuBtn.addEventListener("click", () => {
-    navbar.classList.toggle("active");
-});
-
 // Seleciona o botão e a seção "sobre"
 const btnTopo = document.getElementById('btnTopo');
 const sectionSobre = document.getElementById('sobre');
@@ -44,7 +36,7 @@ form.addEventListener('input', () => {
     botao.disabled = !todosPreenchidos;
 });
 
-// "Finge" que enviou
+// "Simulação" que enviou
 form.addEventListener('submit', (e) => {
     e.preventDefault(); // impede o envio real
     botao.disabled = true;
