@@ -13,4 +13,4 @@ A cada novo conhecimento, este projeto será melhorado.
 - JavaScript
 
 ## Acessar projeto: 
-https://viniciusblesa.github.io/Portfolio-Vinicius-Blesa/
+https://viniciusblesa.github.io/PortfolioWEB/
