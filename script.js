@@ -1,52 +1,122 @@
-// Seleciona o botão e a seção "sobre"
-const btnTopo = document.getElementById('btnTopo');
-const sectionSobre = document.getElementById('sobre');
+// ===============================
+// ELEMENTOS DA PÁGINA
+// ===============================
+const btnTopo = document.getElementById("btnTopo");
+const sections = document.querySelectorAll("main section");
+const navLinks = document.querySelectorAll(".nav-links a");
+const revealItems = document.querySelectorAll(".reveal");
 
-// Função para verificar a visibilidade da seção
-window.addEventListener('scroll', () => {
-    // Pega a distância do topo da página até o topo da seção
-    const distanciaTopo = sectionSobre.offsetTop;
-    // Pega a posição atual do scroll
-    const scrollAtual = window.scrollY;
-    // Altura da janela do navegador
-    const alturaTela = window.innerHeight;
+const form = document.getElementById("formContato");
+const inputs = form.querySelectorAll("input, textarea");
+const botao = document.getElementById("btnEnviar");
+const mensagemSucesso = document.getElementById("mensagemSucesso");
 
-    // Quando a rolagem chegar próximo da seção "sobre"
-    if (scrollAtual + alturaTela / 2 >= distanciaTopo) {
-        btnTopo.classList.add('mostrar'); // Mostra o botão
+// ===============================
+// BOTÃO VOLTAR AO TOPO
+// ===============================
+function mostrarBotaoTopo() {
+    if (window.scrollY > 500) {
+        btnTopo.classList.add("mostrar");
     } else {
-        btnTopo.classList.remove('mostrar'); // Esconde o botão
+        btnTopo.classList.remove("mostrar");
     }
+}
+
+btnTopo.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+    });
 });
 
-// Animação suave para voltar ao topo
-btnTopo.addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+// ===============================
+// MENU ATIVO
+// ===============================
+function atualizarMenu() {
+    const posicao = window.scrollY + 150;
+
+    sections.forEach((section) => {
+        const topo = section.offsetTop;
+        const altura = section.offsetHeight;
+        const id = section.getAttribute("id");
+
+        if (posicao >= topo && posicao < topo + altura) {
+            navLinks.forEach((link) => {
+                link.classList.remove("active");
+
+                if (link.getAttribute("href") === `#${id}`) {
+                    link.classList.add("active");
+                }
+            });
+        }
+    });
+}
+
+// ===============================
+// ANIMAÇÃO AO ROLAR
+// ===============================
+function revelarElementos() {
+    revealItems.forEach((item) => {
+        const distancia = item.getBoundingClientRect().top;
+
+        if (distancia < window.innerHeight - 100) {
+            item.classList.add("visible");
+        }
+    });
+}
+
+// ===============================
+// VALIDAÇÃO DO FORMULÁRIO
+// ===============================
+function validarFormulario() {
+    const preenchido = [...inputs].every((input) => input.checkValidity());
+
+    botao.disabled = !preenchido;
+}
+
+inputs.forEach((input) => {
+    input.addEventListener("input", validarFormulario);
 });
 
-// Formulario
-const form = document.getElementById('formContato');
-const inputs = form.querySelectorAll('input, textarea');
-const botao = document.getElementById('btnEnviar');
-const mensagemSucesso = document.getElementById('mensagemSucesso');
+// ===============================
+// ENVIO DO FORMULÁRIO
+// ===============================
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
 
-// Habilita o botão apenas quando todos os campos estiverem válidos
-form.addEventListener('input', () => {
-    const todosPreenchidos = Array.from(inputs).every(input => input.checkValidity());
-    botao.disabled = !todosPreenchidos;
-});
-
-// "Simulação" que enviou
-form.addEventListener('submit', (e) => {
-    e.preventDefault(); // impede o envio real
     botao.disabled = true;
     botao.textContent = "Enviando...";
 
-    // Simula um pequeno tempo de processamento
     setTimeout(() => {
-        mensagemSucesso.style.display = "block";
+        mensagemSucesso.hidden = false;
+        mensagemSucesso.classList.add("show");
+
         botao.textContent = "Enviar";
+
         form.reset();
-        botao.disabled = true; // desativa novamente até preencher tudo
-    }, 1500);
+
+        validarFormulario();
+
+        setTimeout(() => {
+            mensagemSucesso.hidden = true;
+            mensagemSucesso.classList.remove("show");
+        }, 4000);
+
+    }, 1200);
+});
+
+// ===============================
+// EVENTOS DA JANELA
+// ===============================
+window.addEventListener("scroll", () => {
+    mostrarBotaoTopo();
+    atualizarMenu();
+    revelarElementos();
+});
+
+window.addEventListener("load", () => {
+    mostrarBotaoTopo();
+    atualizarMenu();
+    revelarElementos();
+    validarFormulario();
 });

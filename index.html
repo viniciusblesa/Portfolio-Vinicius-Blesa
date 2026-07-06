@@ -3,180 +3,246 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio</title>
+    <meta name="description" content="Portfólio moderno de Vinicius Blesa, estudante de Ciência da Computação e desenvolvedor web em formação.">
+    <title>Vinicius Blesa | Portfólio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/devIcon.png">
 </head>
-    <!-- Corpo da Página Web -->
 <body>
-    <!-- Cabesalho e Navegação da Página -->
-    <header>
-        <div class="logo">
-            <img src="img/dev.png" alt="Desenvolvimento">
-            <h3>Dev</h3>
-        </div>
-    </header>
-    <!-- Conteudo da Página -->
-    <!-- Aprecentação -->
-    <section class="inicio" id="inicio">
-        <div class="container">
-            <div class="containerSon">
-                <h2><span>Vinicius Blesa</span> Bacharel em Ciência da Computação</h2>
-            </div>
-            <img src="img/FotoPerfil.png" alt="Vinicius">        
-        </div>
-    </section>
-    <!-- Sobre Mim -->
-    <section class="sobre" id="sobre">
-        <div class="container">
-            <img src="img/imgSobreMim.png" alt="Vinicius">
-            <div class="containerSon">
-                <h2>Sobre mim</h2>
-                <p>Formado em Ciência da Computação pela UNINOVE, com formação voltada para análise, desenvolvimento e implantação de sistemas informatizados. Busco uma oportunidade como Desenvolvedor Web / Front-end Júnior, onde eu possa evoluir tecnicamente, contribuir com a equipe e adquirir experiência profissional. Comprometido em ser um agente transformador no mercado e na sociedade por meio da tecnologia.</p>
-            </div>
-        </div>
-    </section>
-    <!-- Botão Para Voltar ao Topo da Página -->
-    <button id="btnTopo" title="Voltar ao topo">
-        <p>↑</p>
-    </button>
-    <!-- Ferramentas Que Trabalho -->
-    <section class="servicos" id="servicos">
-        <h2>Expertise em Desenvolvimento</h2>
-        <div class="container">
-            <div class="styleBox">
-                <div class="borderBoxHTML5">
-                    <div class="boxHTML5">
-                        <img src="img/html.png" alt="html">
-                    </div>
-                </div>
-                <h3>HTML</h3>
-            </div>
-            <div class="styleBox">
-                <div class="borderBoxCSS">
-                    <div class="boxCSS">
-                        <img src="img/css.png" alt="css">
-                    </div>
-                </div>
-                <h3>CSS</h3>
-            </div>
-            <div class="styleBox">
-                <div class="borderBoxJS">
-                    <div class="boxJS">
-                        <img src="img/js.png" alt="javaScript">
-                    </div>
-                </div>
-                <h3>JavaScript</h3>
-            </div>
-            <div class="styleBox">
-                <div class="borderBoxBootstrap">
-                    <div class="boxBootstrap">
-                        <img src="img/bootstrap.png" alt="Bootstrap">
-                    </div>
-                </div>
-                <h3>Bootstrap</h3>
-            </div>
-            <div class="styleBox">
-                <div class="borderBoxGit">
-                    <div class="boxGit">
-                        <img src="img/git.png" alt="GitHub">
-                    </div>
-                </div>
-                <h3>Git</h3>
-            </div>
-            <div class="styleBox">
-                <div class="borderBoxGithub">
-                    <div class="boxGithub">
-                        <img src="img/gitHub.png" alt="GitHub">
-                    </div>
-                </div>
-                <h3>GitHub</h3>
-            </div>
-            <div class="styleBox">
-                <div class="borderBoxCanva">
-                    <div class="boxCanva">
-                        <img src="img/canva.png" alt="Canva">
-                    </div>
-                </div>
-                <h3>Canva</h3>
-            </div>
-            <div class="styleBox">
-                <div class="borderBoxClickUp">
-                    <div class="boxClickUp">
-                        <img src="img/clickUp.png" alt="ClickUP">
-                    </div>
-                </div>
-                <h3>ClickUp</h3>
-            </div>
-            <div class="styleBox">
-                <div class="borderBoxExcel">
-                    <div class="boxExcel">
-                        <img src="img/excel.png" alt="Excel">
-                    </div>
-                </div>
-                <h3>Excel</h3>
-            </div>
-        </div>
-    </section>
-    <!-- Meus Projetos -->
-    <section class="projetos" id="projetos">
-        <h2>Conheça Meus Projetos</h2>
-        <div class="container">
-            <a href="https://dragon-ball-site.com.br/" target="_blank">
-                <div class="containerSon">
-                    <p>Este é meu site pessoal com tema inspirado em Dragon Ball. Nele, você encontrará a história desse anime incrível, apresentada com um design exclusivo que eu mesmo criei.</p>
-                    <img src="img/ImgProjetoDragonBall.png" alt="Projeto Dragon Ball"><br>
-                </div>
-            </a>
-        </div>
-    </section>
-    <!-- Formulario de Feedback -->
-    <section class="contato" id="contato">
-        <h2>Mande seu Feedback</h2>
-        <div class="container">
-            <img src="img/imgContato.png" alt="Contato">
-            <form id="formContato">
-                <div class="form">
-                    <label for="nome">Nome Completo:</label>
-                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
-                </div>
-                <div class="form">
-                    <label for="email">E-mail:</label><br>
-                    <input type="email" id="email" name="email" placeholder="Digite seu email" required>
-                </div>
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
 
-                <div class="form">
-                    <label for="mensagem">Mensagem:</label>
-                    <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" required></textarea>
+    <header class="site-header">
+        <nav class="navbar">
+            <span class="brand-name">Vinicius Blesa</span>
+            <ul class="nav-links">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Stack</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero reveal" id="inicio">
+            <div class="hero-content">
+                <p class="eyebrow">Desenvolvedor Full-Stack • Estudante de Ciência da Computação</p>
+                <h1>Transformando ideias em experiências digitais modernas.</h1>
+                <p class="hero-text">Sou um estudante apaixonado por tecnologia, com foco em desenvolvimento web, interfaces intuitivas e soluções que unem estética e performance.</p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#projetos">Ver projetos</a>
+                    <a class="btn btn-secondary" href="#contato">Falar comigo</a>
                 </div>
-                <button type="submit" id="btnEnviar" disabled>Enviar</button>
-                <p id="mensagemSucesso" style="display:none; color: green; margin-top: 10px;">
-                    ✅ Mensagem enviada com sucesso!
-                </p>
-            </form>
-        </div>
-    </section>
-    <!-- Meios de Contato -->
-    <footer>
-        <h3>Redes Sociais</h3>
-        <div class="container">
-            <div class="redes">
-                <a href="https://www.facebook.com/?locale=pt_BR" target="_blank">
-                    <img src="img/facebook.png" alt="facebook">
-                </a>
+                <ul class="highlights">
+                    <li>Design responsivo</li>
+                    <li>UX pensada no usuário</li>
+                    <li>Aprendizado contínuo</li>
+                </ul>
             </div>
-            <div class="redes">
-                <a href="https://www.instagram.com/blesavinicius/" target="_blank">
-                    <img src="img/instagram.png" alt="instagram">
-                </a>
+            <div class="hero-visual">
+                <div class="profile-card">
+                    <img src="img/FotoPerfil.png" alt="Foto de Vinicius Blesa">
+                    <div class="profile-badge">Disponível para projetos</div>
+                </div>
             </div>
-            <div class="redes">
-                <a href="https://www.linkedin.com/in/vinicius-blesa/" target="_blank">
-                    <img src="img/linkedin.png" alt="linkedIn">
-                </a>
+        </section>
+
+        <section class="about reveal" id="sobre">
+            <div class="section-heading">
+                <p class="eyebrow">Sobre mim</p>
+                <h2>Construo soluções claras, rápidas e com propósito.</h2>
             </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <p>Bacharel em Ciência da Computação com formação complementar em Desenvolvimento Full Stack por bootcamp patrocinado pela Accenture. Possuo experiência prática no desenvolvimento de aplicações web, criação de interfaces responsivas, consumo de APIs REST, versionamento de código e desenvolvimento colaborativo de software. <br><br>Tenho perfil analítico, facilidade de aprendizado, boa adaptabilidade a novas tecnologias e forte interesse em desenvolvimento de software, transformação digital e inovação. Busco oportunidade para contribuir com soluções tecnológicas e continuar evoluindo profissionalmente em ambientes colaborativos e desafiadores.</p>
+                    <div class="stats">
+                        <div>
+                            <strong>+4</strong>
+                            <span>anos de estudo</span>
+                        </div>
+                        <div>
+                            <strong>10+</strong>
+                            <span>ferramentas exploradas</span>
+                        </div>
+                        <div>
+                            <strong>4</strong>
+                            <span>projeto principal em destaque</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image-card">
+                    <img src="img/imgSobreMim.png" alt="Ilustração sobre Vinicius">
+                </div>
+            </div>
+        </section>
+
+        <section class="skills reveal" id="servicos">
+            <div class="section-heading">
+                <p class="eyebrow">Stack e ferramentas</p>
+                <h2>Tecnologias com as quais trabalho e aprendo todos os dias.</h2>
+            </div>
+            <div class="skills-grid">
+                <article class="skill-card">
+                    <div class="skill-icon"><img src="img/html.png" alt="HTML"></div>
+                    <h3>HTML</h3>
+                    <p>Estrutura semântica e páginas bem organizadas.</p>
+                </article>
+                <article class="skill-card">
+                    <div class="skill-icon"><img src="img/css.png" alt="CSS"></div>
+                    <h3>CSS</h3>
+                    <p>Estilização moderna, responsiva e com boa experiência visual.</p>
+                </article>
+                <article class="skill-card">
+                    <div class="skill-icon"><img src="img/js.png" alt="JavaScript"></div>
+                    <h3>JavaScript</h3>
+                    <p>Interatividade e dinamismo para páginas mais inteligentes.</p>
+                </article>
+                <article class="skill-card">
+                    <div class="skill-icon"><img src="img/react.png" alt="React"></div>
+                    <h3>React</h3>
+                    <p>Construção de interfaces modernas com componentes reutilizáveis e SPA.</p>
+                </article>
+                <article class="skill-card">
+                    <div class="skill-icon"><img src="img/tailwindcss.png" alt="Tailwind CSS"></div>
+                    <h3>Tailwind CSS</h3>
+                    <p>framework CSS visando a utilidade, que fornece várias classes utilitárias.</p>
+                </article>
+                <article class="skill-card">
+                    <div class="skill-icon"><img src="img/bootstrap.png" alt="Bootstrap"></div>
+                    <h3>Bootstrap</h3>
+                    <p>Componentes prontos para acelerar o desenvolvimento.</p>
+                </article>
+                <article class="skill-card">
+                    <div class="skill-icon"><img src="img/git.png" alt="Git"></div>
+                    <h3>Git</h3>
+                    <p>Controle de versão e organização do fluxo de trabalho.</p>
+                </article>
+                <article class="skill-card">
+                    <div class="skill-icon"><img src="img/gitHub.png" alt="GitHub"></div>
+                    <h3>GitHub</h3>
+                    <p>Hospedagem e compartilhamento de projetos com colaboração.</p>
+                </article>
+                <article class="skill-card">
+                    <div class="skill-icon"><img src="img/canva.png" alt="Canva"></div>
+                    <h3>Canva</h3>
+                    <p>Criação visual rápida para materiais e identidade digital.</p>
+                </article>
+                <article class="skill-card">
+                    <div class="skill-icon"><img src="img/clickUp.png" alt="ClickUp"></div>
+                    <h3>ClickUp</h3>
+                    <p>Planejamento, organização e execução de tarefas.</p>
+                </article>
+                <article class="skill-card">
+                    <div class="skill-icon"><img src="img/excel.png" alt="Excel"></div>
+                    <h3>Excel</h3>
+                    <p>Organização de dados, análise e automações simples.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="projects reveal" id="projetos">
+            <div class="section-heading">
+                <p class="eyebrow">Projetos</p>
+                <h2>Projetos que refletem meu estilo e minha evolução.</h2>
+            </div>
+            <div class="projects-layout">
+                <div class="projects-main">
+                    <article class="project-card featured">
+                        <img src="img/ImgProjetoDragonBall.png" alt="Projeto Dragon Ball">
+                        <div class="project-info">
+                            <h3>Site temático Dragon Ball</h3>
+                            <p>Um projeto desenvolvido com foco em identidade visual, narrativa e uma experiência marcante para o público.</p>
+                            <a href="https://dragon-ball-site.com.br/" target="_blank" rel="noreferrer">Abrir projeto ↗</a><br>
+                            <a href="https://github.com/viniciusblesa/ProjetoSiteTematico" target="_blank" rel="noreferrer">Abrir repositório ↗</a>
+                        </div>
+                    </article>
+                    <article class="project-card featured">
+                        <img src="img/gestaoDeAlunos.png" alt="Projeto Gestão de Alunos">
+                        <div class="project-info">
+                            <h3>Gestão de Alunos</h3>
+                            <p>Sistema web para organização e gestão de alunos, com uma interface simples, funcional e voltada para praticidade.</p>
+                            <a href="https://viniciusblesa.github.io/gestao-alunos-js/" target="_blank" rel="noreferrer">Abrir projeto ↗</a><br>
+                            <a href="https://github.com/viniciusblesa/gestao-alunos-js" target="_blank" rel="noreferrer">Abrir repositório ↗</a>
+                        </div>
+                    </article>
+                    <article class="project-card featured">
+                        <img src="img/landingPageConsorcio.png" alt="Projeto de Landing Page">
+                        <div class="project-info">
+                            <h3>Car Consórcios</h3>
+                            <p>Landing page responsiva e moderna para uma empresa de consórcios automotivos, desenvolvida com React + Vite e preparada para deploy em plataformas como Vercel e Netlify.</p>
+                            <a href="https://landing-page-consorcio-css-grid-cdgch0ebs-vinicius3.vercel.app/" target="_blank" rel="noreferrer">Abrir projeto ↗</a><br>
+                            <a href="https://github.com/viniciusblesa/landing-page-consorcio-css-grid" target="_blank" rel="noreferrer">Abrir repositório ↗</a>
+                        </div>
+                    </article>
+                    <article class="project-card featured">
+                        <img src="img/projetoDeEstudosReact.png" alt="Projeto de Estudos em React">
+                        <div class="project-info">
+                            <h3>Quadro de Talentos</h3>
+                            <p>Projeto de estudos em React desenvolvido durante treinamentos práticos com foco em desenvolvimento de Single Page Applications (SPA), consumo de APIs e manipulação de estado.</p>
+                            <a href="https://accenture-react-training.vercel.app/" target="_blank" rel="noreferrer">Abrir projeto ↗</a><br>
+                            <a href="https://github.com/viniciusblesa/accenture-react-training" target="_blank" rel="noreferrer">Abrir repositório ↗</a>
+                        </div>
+                    </article>
+                </div>
+                <aside class="project-side-card">
+                    <div class="project-info">
+                        <h3>Portfólio em evolução</h3>
+                        <p>Esta página está sendo reinventada com animações, um layout mais moderno e uma experiência visual profissional.</p><br
+                        <span>Em constante atualização</span>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <section class="contact reveal" id="contato">
+            <div class="section-heading">
+                <p class="eyebrow">Contato</p>
+                <h2>Vamos criar algo incrível juntos?</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <img src="img/imgContato.png" alt="Pessoa entrando em contato">
+                    <div class="contact-details">
+                        <h3>Disponível para projetos, estudos e oportunidades.</h3>
+                        <p>Se você procura uma presença online mais forte, ideias bem executadas ou uma parceria para crescer, vamos conversar.</p>
+                        <div class="contact-links">
+                            <a href="mailto:blesa1269@gmail.com">blesa1269@gmail.com</a>
+                            <a href="https://www.linkedin.com/in/vinicius-blesa/" target="_blank" rel="noreferrer">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+                <form id="formContato" class="contact-form">
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" id="btnEnviar" disabled>Enviar</button>
+                    <p id="mensagemSucesso" class="success-message" role="status" hidden>Mensagem enviada com sucesso!</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <button id="btnTopo" title="Voltar ao topo" aria-label="Voltar ao topo">↑</button>
+
+    <footer class="site-footer">
+        <p>© 2026 Vinicius Blesa. Feito com paixão, código e criatividade.</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/?locale=pt_BR" target="_blank" rel="noreferrer"><img src="img/facebook.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/blesavinicius/" target="_blank" rel="noreferrer"><img src="img/instagram.png" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/in/vinicius-blesa/" target="_blank" rel="noreferrer"><img src="img/linkedIn.png" alt="LinkedIn"></a>
         </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
